@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebView Link Test</title>
-  <!-- Uncomment the next line to apply to all links -->
-  <!-- <base target="_blank"> -->
 </head>
 <body>
   <h1>WebView Link Test</h1>
@@ -13,17 +11,7 @@
     <a href="https://www.google.com" target="_blank">Open Google in Browser</a>
   </p>
   <p>
-    <a href="https://www.example.com">Open Example in WebView</a>
+    <a href="https://www.example.com">Stay in WebView</a>
   </p>
-
-  <script>
-    // Optional: JavaScript to handle link opening dynamically
-    document.querySelectorAll('a').forEach(anchor => {
-      const isExternal = new URL(anchor.href, document.baseURI).origin !== location.origin;
-      if (isExternal) {
-        anchor.target = '_blank';
-      }
-    });
-  </script>
 </body>
 </html>
